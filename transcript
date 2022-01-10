@@ -1,0 +1,31 @@
+# vsim -c proc_hier_pbench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
+# Start time: 19:37:58 on Dec 05,2021
+# ** Warning: License feature 'msimpevsimvlog' will expire today.
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.fetch
+# Loading __work.memory2c
+# Loading __work.F_D_reg
+# Loading __work.dff_instr
+# Loading __work.dff
+# Loading __work.control
+# Loading __work.decode
+# Loading __work.rf
+# Loading __work.D_X_reg
+# Loading __work.hazard
+# Loading __work.execute
+# Loading __work.shifter
+# Loading __work.X_M_reg
+# Loading __work.memory
+# Loading __work.M_W_reg
+# Loading __work.writeback
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'hazard0'.  Expected 19, found 18.
+#    Time: 0 ns  Iteration: 0  Instance: /proc_hier_pbench/DUT/p0/hazard0 File: proc.v Line: 83
+# ** Warning: (vsim-3722) proc.v(83): [TFMPC] - Missing connection for port 'stall'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'writedata_prev'. The port definition is at: execute.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /proc_hier_pbench/DUT/p0/execute0 File: proc.v Line: 89
+# log -howmany -rec /* 
+# 2375
+#  run -all
