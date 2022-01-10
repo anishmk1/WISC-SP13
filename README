@@ -11,7 +11,6 @@ however since it was causing problems and not properly implemented.
 
 Data forwarding: I have implemented Ex/MEM to alu and MEM/WB to alu forwarding. I also have forwarding for my branch decision logic since it occurs even 
 earlier => in Decode stage so the dependency checks were slightly different. 
-As far as I can tell my forwarding is one thing that seems to be working correctly since I'm able to pass majority of the simpel tests that have dependencies.
 I also slightly modified my register file to output the writedata directly in the case of a Writeback and Decode register overlap (which should normally not be a problem since the register file should write before read in a clock cycle).
 
 I made a dff_instr module which i use to store the instruction in fd and which resets to NOP rather than HALT. I know this is not allowed but I 
